@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <title>Attack Video Game</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Link VS Thief</h1>
+    </header>
+
+
+
+    <main>
+        <div class="wrap">
+            <div class="sprite1">
+                
+                <!-- <img id='char1' class='character1' src="img/knight/idle.gif" alt=""> -->
+                <div id="imgc1"></div>
+
+                 <br>
+                
+            </div>
+            
+            
+            <div class="sprite2">
+                
+                <!-- <img id='char2' class='character2' src="img/thief/idle.gif" alt=""> -->
+                <div id="imgc2"></div>
+                <br>
+                
+            </div>
+        </div>
+        <p id= "c2" class="charInfo2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente culpa dolores dolore eius quam quae, molestiae, rem, et natus provident! Suscipit nobis laboriosam aliquam minima blanditiis quidem expedita saepe?
+        </p>
+        <p id="c1" class="charInfo1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis suscipit nesciunt quos neque magni et. Voluptate, natus asperiores, sed officia commodi possimus cupiditate ex quisquam corrupti in odit soluta laudantium.
+        </p>
+
+        <div class="health">
+            <img id='healthbarc1' class='healthbarKnight' src="img/hpfull.png" alt="">
+            <img id='healthbarc2' class='healthbarThief' src="img/hpfull.png" alt="">
+            
+            
+        </div>
+
+
+        <div class="buttons">
+           
+            <button id='attack1' class='attack1'  onclick="c1.attack(c2,select()), knightAttackSound() ">Attack</button>
+            <button id='attack2' class='attack2'  onclick="c2.attack(c1,select()), thiefAttackSound() ">Attack</button>
+
+            >
+        </div>
+
+        <div id="console" class="console">
+            Commence the first attack!
+        </div>
+        
+        <audio id="knightAttack" src="img/knight/attack.wav"></audio>
+        <audio id="thiefAttack" src="img/thief/attack.wav"></audio>
+
+        <div id="win" class="win">
+            <p >Game Over!</p>
+            <button  id="startOver" onclick=location="index.html" > Start Over</button>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        All the rights reserved &copy; Eli Jernigan
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
